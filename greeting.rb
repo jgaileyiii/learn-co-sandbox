@@ -6,8 +6,9 @@ archer = {
       "Quotes" => ["I swear to god, I had something for this", "Phrasing", "Boop", "Danger Zone", "Read a book", "Do you not?", "Can't or won't?"]
   }
   
-  def random_archer_quote()
-    
+  def random_archer_quote(who)
+    p who["Quotes"].sample
+  end
   
 
   
