@@ -22,15 +22,20 @@ foods = {"pie" => "delicious", "broccoli" => "not delicious",
 "carrots" => "not delicious", "apples" => "delicious",
 "peanut butter" => "delicious"}
 
-def delicious_foods()
+
   foods = {"pie" => "delicious", "broccoli" => "not delicious",
 "carrots" => "not delicious", "apples" => "delicious",
 "peanut butter" => "delicious"}
-    good_foods = []
-    foods.select do {|items, value|, value == "delicious"}
-    good_foods << item
+    
+
+def delicious_foods(hash)
+  good_foods = []
+  hash.each do |food, value|
+    if value == "delicious"
+      good_foods << value
+    end
   end
-  puts good_foods
+  good_foods
 end
 
 
